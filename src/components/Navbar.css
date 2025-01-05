@@ -1,0 +1,30 @@
+.nav-container{
+    display: flex;
+    justify-content: space-between; /* Space between the title and links */
+    align-items: center; 
+    padding: 1rem;
+    background-color: #1f2937;
+    color: white; 
+}
+
+.nav-title{
+    font-size: large;
+}
+
+.nav-container ul {
+    display: flex;
+    list-style: none; /* Remove bullet points */
+    gap: 1rem; /* Add space between the links */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.nav-container li a {
+text-decoration: none; /* Remove underline */
+color: white; /* Link color */
+transition: color 0.3s;
+}
+
+.nav-container li a:hover {
+color: #3b82f6; /* Blue on hover */
+}

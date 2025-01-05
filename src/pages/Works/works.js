@@ -1,9 +1,15 @@
 import React from 'react';
+import './works.css';
 
 const Work = () => (
-  <div>
-    <h1>Work</h1>
-    <p>Reach out to us for more information.</p>
+  <div className="work-container">
+    <h1 className="work-title">Our Projects</h1>
+    <div className="projects-grid">
+      <div className="project-card">Project 1</div>
+      <div className="project-card">Project 2</div>
+      <div className="project-card">Project 3</div>
+      <div className="project-card">Project 4</div>
+    </div>
   </div>
 );
 
