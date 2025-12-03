@@ -1,0 +1,22 @@
+.section {
+  min-height: 100vh;
+  padding: 100px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #f3f3f3;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.text {
+  max-width: 600px;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-top: 20px;
+}
