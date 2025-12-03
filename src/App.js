@@ -13,6 +13,8 @@ function App() {
   const homeRef = useRef(null);
   const aboutRef = useRef(null);
   const projectsRef = useRef(null);
+  const contactRef = useRef(null);
+
 
   const scrollTo = (ref) => {
     ref.current?.scrollIntoView({ behavior: "smooth" });
@@ -24,6 +26,8 @@ function App() {
         <button style={styles.btn} onClick={() => scrollTo(homeRef)}>Home</button>
         <button style={styles.btn} onClick={() => scrollTo(aboutRef)}>About</button>
         <button style={styles.btn} onClick={() => scrollTo(projectsRef)}>Projects</button>
+        <button style={styles.btn} onClick={() => scrollTo(contactRef)}>Contact</button>
+
       </nav>
 
       <section ref={homeRef} style={{...styles.section, background:"#f3f3f3"}}>
@@ -36,6 +40,10 @@ function App() {
 
       <section ref={projectsRef} style={{...styles.section, background:"#ffe0b2"}}>
         <h1>Projects</h1>
+      </section>
+
+      <section ref={contactRef} style={{...styles.section, background:"#ffb2b2ff"}}>
+        <h1>Contact</h1>
       </section>
     </>
   );
