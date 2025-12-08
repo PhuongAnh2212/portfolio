@@ -1,0 +1,51 @@
+.section {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: #0b1d4d; /* dark blue */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Centered name */
+.name {
+  position: relative;
+  z-index: 2;
+  color: white;
+  font-size: 4rem;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(255,255,255,0.8);
+}
+
+/* Stars container */
+.stars {
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background: transparent;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.stars::before, .stars::after {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background-repeat: repeat;
+  background-size: 2px 2px;
+  background-image: radial-gradient(white, rgba(255,255,255,0) 1px);
+  animation: sparkle 50s linear infinite;
+}
+
+.stars::after {
+  animation-duration: 100s;
+  opacity: 0.5;
+}
+
+@keyframes sparkle {
+  from { transform: translate(0,0); }
+  to { transform: translate(-1000px, -1000px); }
+}

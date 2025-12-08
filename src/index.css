@@ -16,3 +16,7 @@ body {
 code {
   font-family: "MyFont", monospace;
 }
+
+html {
+  scroll-behavior: smooth;
+}
