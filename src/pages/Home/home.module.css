@@ -2,7 +2,7 @@
   position: relative;
   width: 100vw;
   height: 100vh;
-  background: radial-gradient(circle at center, #1a1a1a, #000);
+  /* background: radial-gradient(circle at center, #1a1a1a, #000); */
   overflow: hidden;
 }
 
@@ -13,6 +13,7 @@
   color: white;
 }
 
+/* free-position words */
 .in,
 .mess,
 .of {
@@ -22,18 +23,18 @@
 /* In the */
 .in {
   font-family: "MainFont";
-  font-size: 4rem;
-  top: 27%;
-  left: 28%;
+  font-size: clamp(2.5rem, 4vw, 4rem);
+  top: 27vh;
+  left: 28vw;
   font-weight: 100;
 }
 
 /* Mess */
 .mess {
   font-family: "ScriptFont";
-  font-size: 9rem;
-  top: 25%;
-  left: 38%;
+  font-size: clamp(5rem, 10vw, 9rem);
+  top: 25vh;
+  left: 38vw;
   font-style: italic;
   font-weight: 300;
 }
@@ -41,41 +42,45 @@
 /* of */
 .of {
   font-family: "ScriptFont";
-  font-size: 5rem;
-  top: 33%;
-  left: 28%;
+  font-size: clamp(3rem, 5vw, 5rem);
+  top: 33vh;
+  left: 28vw;
   font-weight: normal;
 }
 
 /* ONE-LINE group */
 .line {
   position: absolute;
-  top: 35%;
-  left: 30%;
+  top: 35vh;
+  left: 30vw;
   display: flex;
   align-items: baseline;
-  gap: 1.2rem;
+  gap: clamp(0.6rem, 1vw, 1.2rem);
   white-space: nowrap;
+  flex-wrap: nowrap;
 }
 
 /* Code */
 .code {
   font-family: "BlueScreen";
-  font-size: 8rem;
+  font-size: clamp(5rem, 10vw, 8rem);
   font-weight: normal;
+  color: white;
 }
 
 /* & */
 .amp {
   font-family: "MainFont";
-  font-size: 4rem;
+  font-size: clamp(2.5rem, 4vw, 4rem);
   font-weight: normal;
+  color: white;
 }
 
 /* Art */
 .art {
   font-family: "ScriptFont";
-  font-size: 9rem;
+  font-size: clamp(5rem, 10vw, 9rem);
   font-weight: normal;
+  font-style: italic;
+  color: white;
 }
-
