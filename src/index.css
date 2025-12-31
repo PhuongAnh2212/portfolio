@@ -1,20 +1,20 @@
 /* Add your custom font */
 @font-face {
-  font-family: "MyFont";
-  src: url("assets/Boldonse-Regular.ttf") format("truetype");
+  font-family: "MainFont";
+  src: url("assets/BHN\ Sometimes\ Times\ Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 body {
   margin: 0;
-  font-family: "MyFont", sans-serif;
+  font-family: "MainFont", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: "MyFont", monospace;
+  font-family: "MainFont", monospace;
 }
 
 html {
