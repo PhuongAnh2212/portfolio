@@ -1,38 +1,65 @@
+/* bottom navbar */
 .nav-container {
     position: fixed;
     bottom: 0;
     left: 2%;
-    width: 100%;
-    padding: 10px 20px;
     display: flex;
-    /* justify-content: center; */
-    /* gap: 10px; */
+    gap: 14px;
+    padding: 12px 20px;
     z-index: 100;
 }
 
+/* nav buttons */
 .nav-btn {
     color: white;
-    border: none;
     background: transparent;
+    border: none;
     cursor: pointer;
     font-family: "MainFont";
     font-size: 16px;
     opacity: 0.6;
-    transform: skewX(0deg) translateY(0);
+    transform: skewX(0deg);
     transition:
         opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1),
-        color 0.6s cubic-bezier(0.4, 0, 0.2, 1),
         transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-btn:hover {
-    opacity: 1;
-    transform: skewX(-8deg) translateY(-1px);
-    font-weight: bold;
-}
-
-
+.nav-btn:hover,
 .nav-btn.active {
     opacity: 1;
-    font-weight: bold;
+    transform: skewX(-8deg);
+}
+
+/* right social bar */
+.social-bar {
+    position: fixed;
+    right: 2%;
+    bottom: 0;
+    display: flex;
+    gap: 14px;
+    padding: 12px 20px;
+    z-index: 100;
+}
+
+.social-bar a {
+    font-family: "MainFont";
+    font-size: 14px;
+    color: white;
+    opacity: 0.6;
+    text-decoration: none;
+    transition:
+        opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+        transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-bar a:hover {
+    opacity: 1;
+    transform: skewX(-8deg);
+}
+
+/* hide on mobile */
+@media (max-width: 768px) {
+    .social-bar {
+        display: none;
+    }
 }

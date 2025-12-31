@@ -1,4 +1,3 @@
-import { useRef } from "react";
 import Home from "./pages/Home/home";
 import About from "./pages/About/about";
 import Works from "./pages/Works/works";

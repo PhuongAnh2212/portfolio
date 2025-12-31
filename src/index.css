@@ -6,6 +6,27 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "ScriptFont";
+  src: url("assets/BHN\ Sloop\ Script\ Pro\ Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BHNMarlineFont";
+  src: url("assets/BHN\ Marlide\ Display\ Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BlueScreen";
+  src: url("assets/Blue\ Screen\ Personal\ Use.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   margin: 0;
   font-family: "MainFont", sans-serif;
