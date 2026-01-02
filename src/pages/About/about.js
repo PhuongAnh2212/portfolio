@@ -19,13 +19,29 @@ const About = forwardRef((props, ref) => {
   }, []);
 
   return (
-    <section ref={ref} className={styles.about}>
-      {/* TEXT */}
-      <div className={styles.textContainer}>About Me</div>
+    <section
+      ref={ref}
+      id="about"
+      className={styles.about}
+    >
+      {/* GRID CONTENT */}
+      <div className={styles.grid}>
+        {/* LEFT — MAIN TEXT */}
+        <div className={styles.mainText}>
+          <h1>Aerin</h1>
+          <h1>Pham</h1>
+        </div>
 
-      {/* BACKGROUND */}
+        {/* RIGHT — SUBTEXT */}
+        <div className={styles.subText}>
+          <p>Creative Developer</p>
+          <p>Focused on calm interfaces and systems</p>
+          <p>React · Next.js · Motion</p>
+        </div>
+      </div>
+
+      {/* BACKGROUND (unchanged) */}
       <div className={styles.gradientBg}>
-        {/* SVG GOO FILTER */}
         <svg xmlns="http://www.w3.org/2000/svg">
           <filter id="goo">
             <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />

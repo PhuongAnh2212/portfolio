@@ -79,7 +79,7 @@ function Navbar() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          LKND
+          LKDN
         </a>
 
         {/* <a
